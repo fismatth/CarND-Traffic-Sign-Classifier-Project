@@ -21,9 +21,9 @@ The goals / steps of this project are the following:
 ---
 **Write-up**
 
-Link to the [github repository](https://github.com/fismatth/CarND-Traffic-Sign-Classifier-Project)
-Link to my [project code](https://github.com/fismatth/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb).
-Executed and saved as [html](https://github.com/fismatth/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.html).
+* Link to the [github repository](https://github.com/fismatth/CarND-Traffic-Sign-Classifier-Project)
+* Link to the [project code](https://github.com/fismatth/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
+* Executed and saved as [html](https://github.com/fismatth/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.html)
 
 **Data Set Summary & Exploration**
 
@@ -40,16 +40,16 @@ From signnames.csv, we know that:
 
 Exploratory visualization of 10 images from the data set with corresponding labels:
 
-11: Right-of-way at the next intersection
-22: Bumpy road
-10: No passing for vehicles over 3.5 metric tons
-4: Speed limit (70km/h)
-10: No passing for vehicles over 3.5 metric tons
-0: Speed limit (20km/h)
-10: No passing for vehicles over 3.5 metric tons
-22: Bumpy road
-7: Speed limit (100km/h)
-25: Road work
+11: Right-of-way at the next intersection  
+22: Bumpy road  
+10: No passing for vehicles over 3.5 metric tons  
+4: Speed limit (70km/h)  
+10: No passing for vehicles over 3.5 metric tons  
+0: Speed limit (20km/h)  
+10: No passing for vehicles over 3.5 metric tons  
+22: Bumpy road  
+7: Speed limit (100km/h)  
+25: Road work  
 
 ![alt text][image1]
 
@@ -122,7 +122,7 @@ Here are ten German traffic signs from the [FullIJCNN2013 data set](http://bench
 
 ![alt text][image2]
 
-Here is a short discussion, why or why not these images should be easy or difficult to classify:
+It follows a short discussion, why these images should be easy or difficult to classify:
 
 * Image 1: Speed limit (20km/h): A bit dark, but the 20 should be easy to recognize
 * Image 2: Speed limit (100km/h): Quite blurred and dark, at least the 0 next to the 1 not easy to identify.
@@ -173,11 +173,11 @@ Here are the top 5 softmax probabilities for all ten images:
 | 0.99, 2.5e-4, 1.0e-4, 2.0e-5, 2.5e-6		| Keep left												|
 | 0.98, 0.01, 3.2e-3, 2.2e-3, 1.1e-3		| End of no passing by vehicles over 3.5 metric tons	|
 
-For the images 3, 4, 7, 8, 9 the model is totally sure of its prediction (probabilities greater 0.99). 
-For image 10 it is also quite sure with a probability of greater than 0.98.
-For image 5 there is still a quite significant difference between the highest (0.83) and second highest (0.06) probability. Also the probability of 0.83 is still quite high.
-For image 1, the highest (0.51) and second highest (0.48) probability are quite similar (corresponding traffic signs are the correctly predicted speed limit (20km/h) and the obviously quite similiar speed limit (30km/h)). All other probabilities are quite low.
+For the images 3, 4, 7, 8, 9 the model is totally sure of its prediction (probabilities greater 0.99).  
+For image 10 it is also quite sure with a probability of greater than 0.98.  
+For image 5 there is still a quite significant difference between the highest (0.83) and second highest (0.06) probability. Also the probability of 0.83 is still quite high.  
+For image 1, the highest (0.51) and second highest (0.48) probability are quite similar (corresponding traffic signs are the correctly predicted speed limit (20km/h) and the obviously quite similiar speed limit (30km/h)). All other probabilities are quite low.  
 The situation is similar for image 2, with 0.48 as highest probability (correctly detectd speed limit (100km/h)) and 0.4 as second highest probability (corresponding to No passing for vehicles over 3.5 metric tons). Also the third highest probability of 0.1 is still quite high (corresponding to speed limit 80km/h). 
-In contrast to image 1, the similarity of the traffic signs with high probability is not there.
+In contrast to image 1, the similarity of the traffic signs with high probability is not there.  
 For the only wrongly predicted image 6, it can also be seen from the probabilities that the model is not quite sure in this case. The highest probability (0.4) is significantly below 0.5 - which we can interpret as "the probability that it is any other traffic sign is higher than the probability that it is the traffic sign with highest probability (slippery road in this case)".
 Also, the top 5 probabilities only sum up to about 0.91. The probability of the correct traffic sign (Children crossing) is only 0.07.
