@@ -139,18 +139,18 @@ It follows a short discussion, why these images should be easy or difficult to c
 
 Here are the results of the prediction:
 
-| Image													|     Prediction	        							| 
-|:-----------------------------------------------------:|:-----------------------------------------------------:| 
-| Speed limit (20km/h)									| Speed limit (20km/h)									|
-| Speed limit (100km/h)									| Speed limit (100km/h)									|
-| Right-of-way at the next intersection					| Right-of-way at the next intersection					|
-| General caution										| General caution										|
-| Road narrows on the right								| Road narrows on the right								|
-| Children crossing										| Slippery road											|
-| End of all speed and passing limits					| End of all speed and passing limits					|
-| Ahead only											| Ahead only											|
-| Keep left												| Keep left												|
-| End of no passing by vehicles over 3.5 metric tons	| End of no passing by vehicles over 3.5 metric tons	|
+| Image	| Traffic sign											|     Prediction	        							| 
+|:-----:|:-----------------------------------------------------:|:-----------------------------------------------------:| 
+| 1		| Speed limit (20km/h)									| Speed limit (20km/h)									|
+| 2		| Speed limit (100km/h)									| Speed limit (100km/h)									|
+| 3		| Right-of-way at the next intersection					| Right-of-way at the next intersection					|
+| 4		| General caution										| General caution										|
+| 5		| Road narrows on the right								| Road narrows on the right								|
+| 6		| Children crossing										| Slippery road											|
+| 7		| End of all speed and passing limits					| End of all speed and passing limits					|
+| 8		| Ahead only											| Ahead only											|
+| 9		| Keep left												| Keep left												|
+| 10	| End of no passing by vehicles over 3.5 metric tons	| End of no passing by vehicles over 3.5 metric tons	|
 
 The model was able to correctly guess 9 of the 10 traffic signs, which gives an accuracy of 90%. This is about the same rate we had on the test and validation set.
 
@@ -160,18 +160,18 @@ The code for making predictions on my final model is located in the 14th cell of
 
 Here are the top 5 softmax probabilities for all ten images:
 
-| Top 5 Probabilities 						|     Prediction	        					| 
-|:-----------------------------------------:|:-----------------------------------------------------:| 
-| 0.51, 0.48, 4.5e-3, 9.5e-4, 5.2e-4		| Speed limit (20km/h)									|
-| 0.48, 0.4, 0.1, 3.8e-3, 1.6e-3			| Speed limit (100km/h)									|
-| 0.99, 1.5e-4, 1.5e-4, 7.7e-5, 1.9e-5		| Right-of-way at the next intersection					|
-| 0.99, 7.3e-8, 5.1e-11, 1.3e-15, 6.7e-15	| General caution										|
-| 0.83, 0.06, 0.03, 0.02, 0.01				| Road narrows on the right								|
-| 0.44, 0.30, 0.07, 0.07, 0.03				| Slippery road											|
-| 0.99, 6.5e-3, 1.9e-3, 9.5e-5, 1.1e-5		| End of all speed and passing limits					|
-| 0.99, 8.0e-12, 1.5e-12, 3.8e-13, 1.1e-13	| Ahead only											|
-| 0.99, 2.5e-4, 1.0e-4, 2.0e-5, 2.5e-6		| Keep left												|
-| 0.98, 0.01, 3.2e-3, 2.2e-3, 1.1e-3		| End of no passing by vehicles over 3.5 metric tons	|
+| Image | Top 5 Probabilities 						|     Prediction	        							| 
+|:-----:|:-----------------------------------------:|:-----------------------------------------------------:| 
+| 1		| 0.51, 0.48, 4.5e-3, 9.5e-4, 5.2e-4		| Speed limit (20km/h)									|
+| 2		| 0.48, 0.4, 0.1, 3.8e-3, 1.6e-3			| Speed limit (100km/h)									|
+| 3		| 0.99, 1.5e-4, 1.5e-4, 7.7e-5, 1.9e-5		| Right-of-way at the next intersection					|
+| 4		| 0.99, 7.3e-8, 5.1e-11, 1.3e-15, 6.7e-15	| General caution										|
+| 5		| 0.83, 0.06, 0.03, 0.02, 0.01				| Road narrows on the right								|
+| 6		| 0.44, 0.30, 0.07, 0.07, 0.03				| Slippery road											|
+| 7		| 0.99, 6.5e-3, 1.9e-3, 9.5e-5, 1.1e-5		| End of all speed and passing limits					|
+| 8		| 0.99, 8.0e-12, 1.5e-12, 3.8e-13, 1.1e-13	| Ahead only											|
+| 9		| 0.99, 2.5e-4, 1.0e-4, 2.0e-5, 2.5e-6		| Keep left												|
+| 10	| 0.98, 0.01, 3.2e-3, 2.2e-3, 1.1e-3		| End of no passing by vehicles over 3.5 metric tons	|
 
 For the images 3, 4, 7, 8, 9 the model is totally sure of its prediction (probabilities greater 0.99).  
 For image 10 it is also quite sure with a probability of greater than 0.98.  
