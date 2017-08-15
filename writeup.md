@@ -94,11 +94,6 @@ To train the model, I used Adams optimizer from tensorflow (tensorflow.train.Ada
 * To initialize weights with normal distribution: mu = 0, sigma = 0.1
 
 **4. Approach to find a good model architecture**
-Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. 
-Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. 
-Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution 
-and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. 
-In this case, discuss why you think the architecture is suitable for the current problem.
 
 As a starting point, I used the LeNet architecture from the previous lab. The first step was to adapt the dimensions.
 Starting with an input of 32x32x3 instead of 32x32x1, we already have 3 channels instead of 1. Thus, I decided to also increase
@@ -115,8 +110,6 @@ My final model results were:
 **Testing the Model on New Images**
 
 **1. Visualization of New Images**
-Choose five German traffic signs found on the web and provide them in the report. 
-For each image, discuss what quality or qualities might be difficult to classify.
 
 Here are ten German traffic signs from the [FullIJCNN2013 data set](http://benchmark.ini.rub.de/Dataset_GTSDB/FullIJCNN2013.zip).
 
